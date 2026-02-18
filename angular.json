@@ -15,11 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/angular-wv",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -50,7 +50,10 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "none",
+              "namedChunks": false,
+              "vendorChunk": false,
+              "commonChunk": false
             },
             "development": {
               "optimization": false,
@@ -61,13 +64,16 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "angular-wv:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "angular-wv:build:production"
+              "browserTarget": "angular-wv:build:production"
             },
             "development": {
-              "buildTarget": "angular-wv:build:development"
+              "browserTarget": "angular-wv:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3177e708-b4f1-425b-ba0d-f681aa141514"
   }
 }

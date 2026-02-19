@@ -1,0 +1,101 @@
+/* Card container */
+.due-card {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 22px 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.due-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.due-card__icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.due-card__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #111;
+}
+
+/* List */
+.due-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Item */
+.due-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  background: #fff6ee;
+  border: 1px solid #f2c8a0;
+  border-radius: 18px;
+  padding: 18px 18px;
+}
+
+.due-item__left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.due-item__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.due-item__meta {
+  font-size: 20px;
+  color: #d35400;
+}
+
+.due-item__meta strong {
+  font-weight: 900;
+}
+
+/* Pill */
+.due-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 52px;
+  height: 34px;
+  padding: 0 12px;
+
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.due-pill--danger {
+  background: #ff2b2b;
+}
+
+.due-pill--warn {
+  background: #ff7a00;
+}
+
+.due-pill--ok {
+  background: #2bb673;
+}

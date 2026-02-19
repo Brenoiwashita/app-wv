@@ -1,0 +1,14 @@
+
+<div class="due-card__list">
+  @for (item of dueItems; track item.id) {
+    <article class="due-item">
+      <div class="due-item__left">
+        <div class="due-item__name">{{ item.name }}</div>
+        <div class="due-item__meta">
+          Vence em <strong>{{ item.dueInDays }} {{ item.dueInDays === 1 ? 'dia' : 'dias' }}</strong>
+        </div>
+      </div>
+      <span class="due-pill" [ngClass]="getPillClass(item.dueInDays)">{{ item.dueInDays }}d</span>
+    </article>
+  }
+</div>

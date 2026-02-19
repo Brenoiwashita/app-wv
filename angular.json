@@ -66,14 +66,14 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "angular-wv:build"
+            "buildTarget": "angular-wv:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-wv:build:production"
+              "buildTarget": "angular-wv:build:production"
             },
             "development": {
-              "browserTarget": "angular-wv:build:development"
+              "buildTarget": "angular-wv:build:development"
             }
           },
           "defaultConfiguration": "development"

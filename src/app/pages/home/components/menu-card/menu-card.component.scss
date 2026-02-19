@@ -1,0 +1,63 @@
+.container-menu-card {
+  margin-top: 5vh;
+  padding-inline: 4vw;
+}
+
+.card {
+  height: 16vh;
+  border-radius: 20px;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.card-icon svg {
+  width: 42px;
+  height: 42px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* Background variants */
+.card-vacina {
+  background: linear-gradient(135deg, #2b7fff, #1e4fbf);
+  color: white;
+}
+
+.card-remedios {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.card-exames {
+  background: linear-gradient(135deg, #ff9800, #e65100);
+  color: white;
+}
+
+.card-eventos {
+  background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+  color: white;
+}

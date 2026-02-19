@@ -1,0 +1,14 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  height: 12vh;
+  padding: 0 1rem;
+
+  /* Pure CSS gradient (blue -> darker blue) */
+  background: linear-gradient(90deg, #2b7fff 0%, #1e4fbf 100%);
+
+  border-bottom: 1px solid #ddd;
+  color: #fff;
+}

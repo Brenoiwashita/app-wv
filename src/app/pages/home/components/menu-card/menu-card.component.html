@@ -1,0 +1,12 @@
+<div class="row container-menu-card">
+    @for (item of listCard; track $index) {
+        <div class="col-6 mb-3">
+            <div class="card" [ngClass]="item.bgClass">
+                <div class="card-content">
+                    <div class="card-icon" [innerHTML]="getSanitizedIcon(item.icon)"></div>
+                    <div class="card-title">{{ item.name }}</div>
+                </div>
+            </div>
+        </div>
+    }
+</div> 

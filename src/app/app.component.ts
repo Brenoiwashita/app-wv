@@ -9,4 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class AppComponent {}
+export class AppComponent {
+  public  teste = (window as any).dog;
+}

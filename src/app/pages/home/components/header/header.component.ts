@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class HeaderComponent {
-  public name = 'Nori';
+  public name = '';
 
   ngonInit(): void {
     this.name = (window as any).dog;
-
   }
 
 }
